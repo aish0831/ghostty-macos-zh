@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ghostty upstream support
+    url: https://github.com/ghostty-org/ghostty/discussions
+    about: Use upstream discussions for issues unrelated to this localization patch.

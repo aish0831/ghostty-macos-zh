@@ -1,0 +1,34 @@
+name: Bug report
+description: Report a reproducible localization or build problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not upload Ghostty.app, private configuration, keys, or crash reports containing sensitive paths.
+  - type: input
+    id: ghostty-version
+    attributes:
+      label: Ghostty version
+      placeholder: 1.3.1
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: Include the exact command and sanitized output.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true

@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ghostty-macos-zh"
+version = "0.1.0"
+description = "Unofficial Simplified Chinese resource patcher for Ghostty on macOS"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "ab" }]
+license = "GPL-3.0-only"
+license-files = ["LICENSE", "LICENSES/*.txt"]
+keywords = ["ghostty", "macos", "localization", "chinese", "terminal"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: MacOS X",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Localization",
+]
+dependencies = ["nibarchive==1.1.0"]
+
+[project.urls]
+Homepage = "https://github.com/aish0831/ghostty-macos-zh"
+Repository = "https://github.com/aish0831/ghostty-macos-zh.git"
+Issues = "https://github.com/aish0831/ghostty-macos-zh/issues"
+
+[project.optional-dependencies]
+dev = ["build>=1.2,<2", "ruff>=0.8,<1"]
+
+[project.scripts]
+ghostty-macos-zh = "ghostty_macos_zh.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

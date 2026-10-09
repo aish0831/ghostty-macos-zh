@@ -1,0 +1,17 @@
+ghostty-macos-zh
+Copyright (C) 2026 ghostty-macos-zh contributors
+
+This is an unofficial project and is not affiliated with or endorsed by the
+Ghostty project or its maintainers.
+
+Ghostty is an open-source project licensed under the MIT License. Ghostty names,
+source code, binaries, and translation catalogs remain the property of their
+respective copyright holders. This repository does not redistribute Ghostty app
+bundles, compiled NIB resources, or translation catalogs; it reads them from a
+user-provided official installation at build time.
+
+This project depends on nibarchive 1.1.0, which is licensed under the GNU General
+Public License version 3. See https://pypi.org/project/nibarchive/.
+
+The generated localized app is a local derivative and is not an official Ghostty
+release. Do not present it as officially signed, notarized, or supported.
